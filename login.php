@@ -8,6 +8,7 @@ echo 'Login<hr>';
 
 if (array_key_exists("username",$_POST))
 {
+    sleep(1);
     $existing = First("USERS","USERNAME",$_POST['username']);
     if ($existing)
     {

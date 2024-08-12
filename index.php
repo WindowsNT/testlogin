@@ -14,7 +14,8 @@ else
 {
     $row = First("USERS","ID",$_SESSION['id']);
     printf('Logged in as: %s<br><br><br>',$row['USERNAME']);
-    echo '<button href="logout.php" class="button is-danger autobutton">Logout</button> ';
+    echo '<button href="logout.php" class="button is-warning autobutton">Logout</button> ';
+    echo '<button href="unregister.php" class="button is-danger autobutton">Unregister</button> ';
 
 }
 echo '</div>';
