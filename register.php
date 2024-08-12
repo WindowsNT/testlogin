@@ -8,6 +8,7 @@ echo 'Register<hr>';
 
 if (array_key_exists("username",$_POST))
 {
+    sleep(1);
     Query("CREATE TABLE IF NOT EXISTS USERS (ID INTEGER PRIMARY KEY,USERNAME TEXT,PASSWORD TEXT,GUID TEXT)");
     if ($_POST['password1'] != $_POST['password2'])
         die("Password mismatch!");
